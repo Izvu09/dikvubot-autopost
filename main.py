@@ -2,11 +2,13 @@ import telegram
 import time
 
 # Замените на токен вашего бота и ID канала
-BOT_TOKEN = 7972132060:AAEkAa7MQRFFy60fbEC6z6R2hV5Rfwq1JsA
+import os
+BOT_TOKEN = os.getenv("7972132060:AAEkAa7MQRFFy60fbEC6z6R2hV5Rfwq1JsA")
 CHANNEL_ID = @molchaliviyhod
-
+BOT_TOKEN=123456:ABCdefGhIjkLmNopQRStuvWxyZ
 bot = telegram.Bot(token=BOT_TOKEN)
-
+from dotenv import load_dotenv
+load_dotenv()
 # Пример поста
 POSTS = [
     "Добро пожаловать на канал! Здесь будет автоматический постинг.",
