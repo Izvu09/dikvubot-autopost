@@ -1,3 +1,9 @@
+dikvubot-autopost/
+├── main.py
+├── .env
+├── .gitignore
+└── requirements.txt
+
 import telegram
 import time
 
@@ -6,7 +12,7 @@ import os
 BOT_TOKEN = os.getenv("7972132060:AAEkAa7MQRFFy60fbEC6z6R2hV5Rfwq1JsA")
 CHANNEL_ID = @molchaliviyhod
 BOT_TOKEN=123456:ABCdefGhIjkLmNopQRStuvWxyZ
-bot = telegram.Bot(token=BOT_TOKEN)
+bot = telegram.Bot(molchaliviyhod)
 from dotenv import load_dotenv
 load_dotenv()
 # Пример поста
@@ -23,4 +29,10 @@ def autopost():
 
 if __name__ == "__main__":
     autopost()
-  
+  .env
+__pycache__/
+*.pyc
+aiogram
+python-dotenv
+pip install -r requirements.txt
+python main.py
